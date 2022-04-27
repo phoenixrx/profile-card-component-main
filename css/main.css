@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+.tope {
+  height: 51%;
+  margin-top: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: hsl(185, 75%, 39%) url("/images/bg-pattern-top.svg") 0 0 no-repeat;
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.bote {
+  height: 50%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  background: url("/images/bg-pattern-bottom.svg") 0 0 no-repeat;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background-color: hsl(185, 75%, 39%);
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans";
+  color: white;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  display: grid;
+}
+main {
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tarjeta {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  width: 100%;
+}
+.encabezado {
+  min-height: 150px;
+  background-image: url("/images/bg-pattern-card.svg");
+  border-radius: 10px 10px 0 0;
+}
+.foto {
+  z-index: 1;
+  position: absolute;
+}
+.foto img {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  margin-top: -50%;
+  margin-left: 110%;
+}
+
+.texto {
+  align-content: center;
+  padding-top: 75px;
+  padding-bottom: 30px;
+}
+
+.inferior {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.estadisticas {
+  border-top: 1px;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: solid;
+  border-color: gray;
+  display: flex;
+}
+.estat3 {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+h1,
+h2,
+h3 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+.nombre,
+.edad {
+  display: inline;
+  padding-top: 65px;
+}
+.edad {
+  padding-left: 0.5em;
+  color: hsl(229, 23%, 23%);
+  font-weight: normal;
+}
+h3 {
+  color: hsl(229, 23%, 23%);
+  font-size: 0.75em;
+}
+.ciudad {
+  letter-spacing: 0.1em;
+}
+h3 {
+  letter-spacing: 0.2em;
+  padding-top: 10px;
+}
+
+.estadisticas h1 {
+  padding-top: 25px;
+  font-size: 1.25em;
+}
+.estadisticas h3 {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
